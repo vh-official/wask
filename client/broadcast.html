@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .btn-success {
+            background-color: rgb(0, 255, 115);
+            border: none;
+        }
+    </style>
+    <title>WA SK | HOME</title>
+</head>
+
+<body style="background-color: rgb(235, 234, 234);">
+
+    <nav class="navbar shadow navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="./assets/wask.png" alt="" width="30">
+            </a>
+        </div>
+    </nav>
+
+    <header class="mt-3">
+        <div class="text-center">
+            <img src="./assets/wask.png" alt="" width="50">
+            <br>
+            <h6 class="fw-bold small">Ngeiklan Produk di Whatsapp mudah dengan aplikasi ini.</h6>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="card card-body">
+            <div class="text-center">
+                <h5>Broadcast</h5>
+            </div>
+            <form action="/broadcast" method="post">
+                <div class="mb-3"><textarea name="message" class="form-control" rows=" 10"
+                        placeholder="pesan"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Kirim Broadcast</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+            <div class="container-fluid">
+                <span class="navbar-text">
+                    <small>Developer LCS
+                        <a style="text-decoration: none;" target="_blank"
+                            href="https://ilhamsk.my.id/sclcs?by=WASKSIMPEL">
+                            Ilham Cahya.
+                        </a>
+                    </small>
+                </span>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
