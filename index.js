@@ -8,7 +8,7 @@ var opn = require('opn');
 
 const { phoneNumberFormatter } = require('./helper/formatter');
 
-const port = 8000 || process.env.PORT
+const port = 80
 const app = express()
 const server = http.createServer(app)
 const io = socketIO(server)
@@ -31,6 +31,8 @@ io.on("connection", async socket => {
 		socket.emit("qrstatus", "./assets/check.svg")
 		socket.emit("log", "WhatsApp terhubung!")
 		socket.emit("log", res)
+		const authInfo = wa.base64EncodedAuthInfo()
+    		fs.writeFileSync('./auth_info.json', JSON.stringify(authInfo, null, '\t'))
 	})
 
 	wa.on("close", res => {
