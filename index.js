@@ -13,7 +13,7 @@ const app = express()
 const server = http.createServer(app)
 const io = socketIO(server)
 const wa = new WAConnection()
-wa.version = [3, 3234, 9]
+wa.version = [2, 2204, 13]
 
 wa.connectOptions.alwaysUseTakeover = false
 
