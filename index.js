@@ -4,7 +4,7 @@ const http = require("http")
 const qrcode = require("qrcode")
 const express = require("express")
 const socketIO = require("socket.io")
-var opn = require('opn');
+
 
 const { phoneNumberFormatter } = require('./helper/formatter');
 
@@ -142,5 +142,4 @@ app.post("/broadcast", async (req, res) => {
 
 server.listen(port, () => {
     console.log(`Server berjalan di http://localhost:${port}`)
-	opn(`http://localhost:${port}`);
 })
